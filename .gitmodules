@@ -1,0 +1,3 @@
+[submodule "Jenny"]
+	path = Jenny
+	url = https://github.com/sschmid/Jenny.git
