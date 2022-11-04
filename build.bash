@@ -61,7 +61,7 @@ generate_asmdef() {
   done < <(get_dependencies "${csproj}" | sort -u)
   if [[ -n "${dependencies}" ]]
   then dependencies="[ ${dependencies::-1}\n  ]"
-  else dependencies="[ ]"
+  else dependencies="[]"
   fi
   if [[ "${package_folder}" == "Editor" ]]
   then platforms='"Editor"'
