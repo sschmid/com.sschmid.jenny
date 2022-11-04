@@ -1,0 +1,21 @@
+{
+  "name": "Jenny.Plugins.Unity",
+  "rootNamespace": "Jenny.Plugins.Unity",
+  "references": [ 
+    "DesperateDevs.Extensions",
+    "DesperateDevs.Reflection",
+    "DesperateDevs.Serialization",
+    "Jenny",
+    "Jenny.Generator",
+    "Sherlog"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

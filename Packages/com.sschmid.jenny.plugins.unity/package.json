@@ -1,0 +1,21 @@
+{
+  "name": "com.sschmid.jenny.plugins.unity",
+  "version": "1.0.1",
+  "displayName": "Jenny.Plugins.Unity",
+  "description": "A lovely .NET Code Generator",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/sschmid/Jenny",
+  "changelogUrl": "https://github.com/sschmid/Jenny/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/sschmid/Jenny/blob/main/LICENSE.md",
+  "dependencies": { 
+    "com.sschmid.jenny.generator": "1.0.0"
+  },
+  "keywords": [
+    "unity",
+    "dotnet",
+    "code-generation"
+  ],
+  "author": {
+    "name": "sschmid"
+  }
+}
