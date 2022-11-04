@@ -26,6 +26,16 @@
       },
       "url": "https://package.openupm.com"
     },
+    "com.sschmid.desperatedevs.unity.editor": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.sschmid.desperatedevs.extensions": "1.0.0",
+        "com.sschmid.desperatedevs.serialization": "2.0.0"
+      },
+      "url": "https://package.openupm.com"
+    },
     "com.sschmid.jenny": {
       "version": "file:com.sschmid.jenny",
       "depth": 0,
@@ -45,11 +55,30 @@
         "com.sschmid.sherlog": "1.0.0"
       }
     },
+    "com.sschmid.jenny.generator.unity.editor": {
+      "version": "file:com.sschmid.jenny.generator.unity.editor",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.sschmid.desperatedevs.unity.editor": "2.0.0",
+        "com.sschmid.jenny.generator": "1.0.0",
+        "com.sschmid.tcpeasy": "1.0.0"
+      }
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.sschmid.tcpeasy": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.sschmid.sherlog": "1.0.0"
+      },
       "url": "https://package.openupm.com"
     },
     "com.unity.editorcoroutines": {

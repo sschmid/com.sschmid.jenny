@@ -1,0 +1,23 @@
+{
+  "name": "Jenny.Generator.Unity.Editor",
+  "rootNamespace": "Jenny.Generator.Unity.Editor",
+  "references": [ 
+    "DesperateDevs.Extensions",
+    "DesperateDevs.Reflection",
+    "DesperateDevs.Serialization",
+    "DesperateDevs.Unity.Editor",
+    "Jenny",
+    "Jenny.Generator",
+    "Sherlog",
+    "TCPeasy"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
