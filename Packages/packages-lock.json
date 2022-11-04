@@ -65,6 +65,16 @@
         "com.sschmid.tcpeasy": "1.0.0"
       }
     },
+    "com.sschmid.jenny.plugins": {
+      "version": "file:com.sschmid.jenny.plugins",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.sschmid.desperatedevs.serialization": "2.0.0",
+        "com.sschmid.jenny": "1.0.0",
+        "com.sschmid.sherlog": "1.0.0"
+      }
+    },
     "com.sschmid.sherlog": {
       "version": "1.0.0",
       "depth": 1,
