@@ -1,0 +1,20 @@
+{
+  "name": "Jenny.Generator",
+  "rootNamespace": "Jenny.Generator",
+  "references": [ 
+    "DesperateDevs.Extensions",
+    "DesperateDevs.Reflection",
+    "DesperateDevs.Serialization",
+    "Jenny",
+    "Sherlog"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
