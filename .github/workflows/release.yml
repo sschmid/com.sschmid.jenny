@@ -13,6 +13,10 @@ on:
           - Jenny.Generator.Unity.Editor
           - Jenny.Plugins
           - Jenny.Plugins.Unity
+      commit:
+        description: "Commit hash"
+        required: true
+        type: string
 
 concurrency: release
 
@@ -23,7 +27,14 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           submodules: 'recursive'
+
+      - name: "Checkout Jenny@${{ inputs.commit }}"
+        run: |
+          cd Jenny
+          git switch main
+          git reset --hard ${{ inputs.commit }}
 
       - name: "Install dependencies"
         run: |
