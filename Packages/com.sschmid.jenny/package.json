@@ -1,6 +1,6 @@
 {
   "name": "com.sschmid.jenny",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Jenny",
   "description": "A lovely .NET Code Generator",
   "unity": "2021.3",
