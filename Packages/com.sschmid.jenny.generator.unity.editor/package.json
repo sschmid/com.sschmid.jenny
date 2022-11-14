@@ -1,6 +1,6 @@
 {
   "name": "com.sschmid.jenny.generator.unity.editor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Jenny.Generator.Unity.Editor",
   "description": "A lovely .NET Code Generator",
   "unity": "2021.3",
@@ -9,8 +9,8 @@
   "licensesUrl": "https://github.com/sschmid/Jenny/blob/main/LICENSE.md",
   "dependencies": { 
     "com.sschmid.desperatedevs.unity.editor": "2.0.0",
-    "com.sschmid.jenny.generator": "1.0.0",
-    "com.sschmid.tcpeasy": "1.0.0"
+    "com.sschmid.jenny.generator": "1.0.1",
+    "com.sschmid.tcpeasy": "1.0.1"
   },
   "keywords": [
     "unity",
