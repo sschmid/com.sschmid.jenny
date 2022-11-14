@@ -30,7 +30,14 @@ MonoBehaviour:
     m_Url: https://package.openupm.com
     m_Scopes:
     - com.openupm
-    - com.sschmid
+    - com.sschmid.desperatedevs.extensions
+    - com.sschmid.desperatedevs.reflection
+    - com.sschmid.desperatedevs.serialization
+    - com.sschmid.desperatedevs.unity.editor
+    - com.sschmid.jenny
+    - com.sschmid.jenny.generator
+    - com.sschmid.sherlog
+    - com.sschmid.tcpeasy
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: package.openupm.com
@@ -38,6 +45,6 @@ MonoBehaviour:
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -846
-    m_OriginalInstanceId: -848
+    m_UserModificationsInstanceId: -826
+    m_OriginalInstanceId: -830
   m_LoadAssets: 0

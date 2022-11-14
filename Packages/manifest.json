@@ -39,15 +39,32 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.modules.xr": "1.0.0",
+    "com.sschmid.desperatedevs.extensions": "1.0.0",
+    "com.sschmid.desperatedevs.reflection": "1.0.0",
+    "com.sschmid.desperatedevs.serialization": "2.0.0",
+    "com.sschmid.jenny": "1.0.0",
+    "com.sschmid.sherlog": "1.0.0",
+    "com.sschmid.desperatedevs.unity.editor": "2.0.0",
+    "com.sschmid.jenny.generator": "1.0.0",
+    "com.sschmid.tcpeasy": "1.0.0"
   },
+  "enableLockFile": false,
+  "resolutionStrategy": "highestMinor",
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
         "com.openupm",
-        "com.sschmid"
+        "com.sschmid.desperatedevs.extensions",
+        "com.sschmid.desperatedevs.reflection",
+        "com.sschmid.desperatedevs.serialization",
+        "com.sschmid.desperatedevs.unity.editor",
+        "com.sschmid.jenny",
+        "com.sschmid.jenny.generator",
+        "com.sschmid.sherlog",
+        "com.sschmid.tcpeasy"
       ]
     }
   ]

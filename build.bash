@@ -14,11 +14,11 @@ declare -A PROJECTS=(
 )
 
 get_dependencies() {
-  local -i upm=0
+  local -i upm=0 include_transitive=1
   local options
 
   while (($#)); do case "$1" in
-    --unity-package) shift; upm=1; options="--unity-package" ;;
+    --unity-package) shift; upm=1; unset include_transitive; options="--unity-package" ;;
     --) shift; break ;; *) break ;;
   esac done
 
@@ -32,13 +32,17 @@ get_dependencies() {
   done < <(dotnet list "$1" reference | tail -n +3)
 
   dotnet restore "$1" > /dev/null
-  local package
+  local package indent
   while read -r package; do
-    if [[ -n "${package}" ]]; then
-      ((upm)) && package="${PACKAGE_PREFIX}.${package,,}"
-      echo "${package}"
+    indent="$(echo "${package}" | awk '{print $1}')"
+    if [[ "${indent}" == ">" ]]; then
+      package="$(echo "${package}" | awk '{print $2 "\t" $(NF)}')"
+      if [[ "${package}" != System* ]]; then
+        ((upm)) && package="${PACKAGE_PREFIX}.${package,,}"
+        echo "${package}"
+      fi
     fi
-  done < <(dotnet list "$1" package -v quiet | tail -n +4 | awk '{print $2 "\t" $3}')
+  done < <(dotnet list "$1" package ${include_transitive:+--include-transitive} --highest-minor -v quiet)
 }
 
 update() {
@@ -68,7 +72,7 @@ generate_asmdef() {
   else platforms=""
   fi
 
-  cat <<EOF >"${dist}/${package_folder}/${project}.asmdef"
+  cat << EOF > "${dist}/${package_folder}/${project}.asmdef"
 {
   "name": "${project}",
   "rootNamespace": "${project}",
@@ -90,14 +94,16 @@ generate_package_json() {
   echo "Generate ${project} package.json"
   local name version dependencies=""
   while read -r name version; do
+    [[ "${version}" =~ ^[[:digit:]]*\.\* ]] && version="${version%%.*}.0.0"
     dependencies+="\n    \"${name}\": \"${version}\","
+    openupm add "${name}" || true
   done < <(get_dependencies --unity-package "${csproj}" | sort -u)
   if [[ -n "${dependencies}" ]]
   then dependencies="{ ${dependencies::-1}\n  }"
   else dependencies="{ }"
   fi
 
-  cat <<EOF >"${dist}/package.json"
+  cat << EOF > "${dist}/package.json"
 {
   "name": "${PACKAGE_PREFIX}.${project,,}",
   "version": "$(xmllint --xpath 'string(/Project/PropertyGroup/Version)' "${csproj}")",
