@@ -1,6 +1,6 @@
 {
   "name": "com.sschmid.jenny.generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Jenny.Generator",
   "description": "A lovely .NET Code Generator",
   "unity": "2021.3",
@@ -8,9 +8,9 @@
   "changelogUrl": "https://github.com/sschmid/Jenny/blob/main/CHANGELOG.md",
   "licensesUrl": "https://github.com/sschmid/Jenny/blob/main/LICENSE.md",
   "dependencies": { 
-    "com.sschmid.desperatedevs.reflection": "1.0.0",
+    "com.sschmid.desperatedevs.reflection": "1.0.1",
     "com.sschmid.desperatedevs.serialization": "2.0.0",
-    "com.sschmid.jenny": "1.0.0",
+    "com.sschmid.jenny": "1.0.2",
     "com.sschmid.sherlog": "1.0.0"
   },
   "keywords": [
