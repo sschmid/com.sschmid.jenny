@@ -1,6 +1,6 @@
 {
   "name": "com.sschmid.jenny",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Jenny",
   "description": "A lovely .NET Code Generator",
   "unity": "2021.3",
@@ -8,7 +8,7 @@
   "changelogUrl": "https://github.com/sschmid/Jenny/blob/main/CHANGELOG.md",
   "licensesUrl": "https://github.com/sschmid/Jenny/blob/main/LICENSE.md",
   "dependencies": { 
-    "com.sschmid.desperatedevs.extensions": "1.0.0"
+    "com.sschmid.desperatedevs.extensions": "2.0.0"
   },
   "keywords": [
     "unity",
